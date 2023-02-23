@@ -162,7 +162,7 @@ app.listen(process.env.PORT || 3001, async function (err) {
   if (err) {
     console.log(err)
   } else {
-    console.log("Server listening on Port", PORT);
+    console.log("Server listening on Port", 3001);
     await open('http://localhost:3001') 
   } 
 });
