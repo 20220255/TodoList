@@ -2,7 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // const date = require(__dirname + "/date.js");
 const mongoose = require('mongoose');
-const _ = require('lodash')
+const _ = require('lodash');
+const open = require('open');
 
 const app = express();
 
@@ -162,6 +163,6 @@ app.listen(process.env.PORT || 3000, function (err) {
     console.log(err)
   } else {
     console.log("Server listening on Port", PORT);
-    exec(start chrome:"http://localhost:3000") 
+    await open('http://localhost:3000') 
   } 
 });
