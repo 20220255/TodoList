@@ -158,11 +158,11 @@ app.get('/about', function (req, res) {
   res.render('about');
 });
 
-app.listen(process.env.PORT || 3000, async function (err) {
+app.listen(process.env.PORT || 3001, async function (err) {
   if (err) {
     console.log(err)
   } else {
     console.log("Server listening on Port", PORT);
-    await open('http://localhost:3000') 
+    await open('http://localhost:3001') 
   } 
 });
