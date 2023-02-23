@@ -162,6 +162,6 @@ app.listen(process.env.PORT || 3000, function (err) {
     console.log(err)
   } else {
     console.log("Server listening on Port", PORT);
-    exec(start chrome "http://localhost:3000") 
+    exec(start chrome:"http://localhost:3000") 
   } 
 });
